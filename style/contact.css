@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 40%;
+    width: var(--width);
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header section */
+header section {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-default);
+    display: flex;
+    position: relative;
+}
+
+header section .left-box {
+    font-family: 'arial';
+    color: var(--color-const-white);
+    width: 100%;
+    font-size: 30pt;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+
+section#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: var(--width) !important;
+    background-color: var(--color-white);
+    color: var(--color-text-black);
+}
+
+section#contact-section .doc {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 5px 5px 10px 0px var(--color-transparent-4);
+}
+
+section#contact-section .doc .map {
+    width: 100%;
+    background: var(--color-gray2);
+}
+
+section#contact-section .doc .about {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section#contact-section .doc .about .title {
+    font-size: 18pt;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section#contact-section .doc .about .description {
+    color: var(--color-transparent-3);
+    font-size: 11pt;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-transparent-3);
+}
+
+section#contact-section .doc .about .address {
+    font-weight: 600;
+    font-size: 10pt;
+    padding: 10px 0;
+}
+
+section#contact-section .doc .about .profile {
+    display: flex;
+    align-items: stretch;
+    padding: 15px 0;
+}
+
+section#contact-section .doc .about .img {
+    font-size: 35pt;
+    color: var(--color-default2);
+}
+
+section#contact-section .doc .about .info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+section#contact-section .doc .about .info .phone {
+    font-size: 15pt;
+    letter-spacing: 0px;
+}
+
+section#contact-section .doc .about .info .mail {
+    color: var(--color-default2);
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+form fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 40px 0;
+    border: none;
+}
+
+form fieldset legend {
+    text-align: center;
+    background: var(--color-gray2);
+    padding: 1px 8px;
+    color: var(--color-default2);
+}
+
+form fieldset .title {
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+form fieldset .table {
+    font-display: flex;
+    flex-direction: column;
+}
+
+form fieldset .table .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+}
+
+form fieldset .table .box input,
+form fieldset .table textarea {
+    outline: none;
+    background: var(--color-gray2);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--color-transparent-3);
+    font-size: 11pt;
+    letter-spacing: .5px;
+    width: 400px;
+}
+
+form fieldset .table textarea {
+    width: 100%;
+    height: 200px;
+}
+
+form fieldset button[type="submit"] {
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    background: var(--color-default2);
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--color-const-white);
+}
+
+@media screen and (max-width: 860px) {
+    header section .left-box {
+        font-size: 20pt;
+    }
+
+    section#contact-section {
+        width: var(--width) !important;
+        position: relative;
+    }
+
+    section#contact-section .doc {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        width: 90%;
+    }
+
+    section#contact-section .doc .map {
+        height: 350px;
+        width: 100%;
+    }
+
+    section#contact-section .doc .about {
+        padding: 10px;
+    }
+
+    section#contact-section .doc .about .info .mail {
+        font-size: 9pt;
+    }
+
+    form fieldset legend {
+        font-size: 09pt;
+    }
+
+    form fieldset .title {
+        font-size: 19pt;
+    }
+
+    form fieldset .table .box input,
+    form fieldset .table textarea {
+        width: 100%;
+        font-size: 11pt;
+    }
+
+    form fieldset .table .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,383 @@
+/* style de l'article : section "about-section" */
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+}
+
+article section .head {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article section .head h1 {
+    font-weight: 500;
+    font-size: 25pt;
+    letter-spacing: 1.5px;
+    color: var(--color-default);
+}
+
+article section .head span {
+    text-align: center;
+    width: 30%;
+    padding: 10px 0;
+    color: var(--color-transparent-3);
+    font-size: 9pt;
+}
+
+article section#about-section .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+article section#about-section .body .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+
+article section#about-section .body .top .sec-1,
+article section#about-section .body .top .sec-2 {
+    width: 45%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px var(--color-transparent-4);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    background-color: var(--color-bg-white);
+}
+
+article section#about-section .body .top #image {
+    height: 300px;
+    width: 40%;
+    border-radius: 5px;
+    background: var(--color-gray2);
+    position: relative;
+}
+
+article section#about-section .body .top #image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+article section#about-section .body .top .text {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+article section#about-section .body .top .text h2 {
+    font-size: 17pt;
+    font-weight: 450;
+    padding: 10px 0;
+    color: var(--color-text-black);
+}
+
+article section#about-section .body .top .sec-2 {
+    justify-content: end;
+}
+
+article section#about-section .body .top .sec-2 .text {
+    align-items: end;
+    text-align: end;
+}
+
+article section#about-section .body .top .text span {
+    color: var(--color-transparent-3);
+    font-size: 10pt;
+}
+
+article section#about-section .body .bottom {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+}
+
+article section#about-section .body .bottom div.block {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+article section#about-section .body .bottom div.block .container {
+    width: 100%;
+}
+
+article section#about-section .body .bottom div.block .line {
+    background: var(--color-default);
+    height: 3.5px;
+    width: 150px;
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+article section#about-section .body .bottom div.block h3 {
+    font-size: 24pt;
+    text-transform: capitalize;
+    color: var(--color-text-black);
+}
+
+article section#about-section .body .bottom div.block p {
+    color: var(--color-transparent-3);
+    font-size: 11pt;
+    padding: 20px 0;
+}
+
+/* Counter section style*/
+article section.sec {
+    background: var(--color-bg-gray);
+}
+
+article section.sec .head h1 {
+    color: var(--color-text-black);
+}
+
+article section.sec .head .line {
+    background: var(--color-default);
+    height: 3px;
+    width: 150px;
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+article section#counter .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+article section#counter .content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 60px 10px;
+}
+
+article section#counter .content div span {
+    color: var(--color-text-default2);
+    font-size: 50pt;
+    padding: 10px;
+}
+
+article section#counter .content div h5 {
+    color: var(--color-transparent-3);
+    font-size: 12pt;
+    font-weight: 350;
+}
+
+article section#service-section .body {
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    gap: 20px;
+    place-content: center;
+}
+
+article section#service-section .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+article section#service-section .card .icon {
+    height: 150px;
+    width: 150px;
+    background: var(--color-transparent-5);
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article section#service-section .card .icon img {
+    height: 150px;
+    object-fit: cover;
+}
+
+article section#service-section .card .title-6 {
+    font-size: 20pt;
+    color: var(--color-text-black);
+    font-weight: 600;
+}
+
+article section#service-section .card span {
+    font-size: 11pt;
+    padding: 10px 5px;
+    color: var(--color-transparent-3);
+}
+
+article section#image-section .body {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    height: calc((var(--width)/5) + 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article section#image-section .body .carousel-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: calc(var(--width)/5) !important;
+}
+
+article section#image-section .body .carousel-container .item {
+    width: calc(var(--width)/5);
+    height: calc(var(--width)/5);
+    margin: 0 1%;
+    transition: transform 0.5s ease;
+    background: var(--color-gray2);
+}
+article section#image-section .more a{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--color-default);
+    font-size: 15pt;
+    font-weight: 600;
+    color: var(--color-const-white);
+}
+
+article section#image-section .body .carousel-container .item img{
+    width: calc(var(--width)/5);
+    height: calc(var(--width)/5);
+    object-fit: cover;
+}
+
+article section#image-section .body .carousel-container .item:hover {
+    transform: scale(1.1);
+    margin: 0 2%;
+}
+
+@media screen and (max-width: 1400px) {
+    article section#about-section .body .top {
+        flex-direction: column;
+    }
+
+    article section#about-section .body .top .sec-1,
+    article section#about-section .body .top .sec-2 {
+        width: 70%;
+        margin: 15px 0;
+    }
+
+    article section#about-section .body .top #image {
+        height: 400px;
+    }
+    header section .left-box .title{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    /* style de l'article : section "about-section" */
+    article section .head h1 {
+        font-size: 25pt;
+    }
+
+    article section .head span {
+        width: 90%;
+        font-size: 11pt;
+    }
+
+    article section#about-section .body .top {
+        flex-direction: column;
+    }
+
+    article section#about-section .body .top .sec-1,
+    article section#about-section .body .top .sec-2 {
+        width: 100%;
+        margin: 15px 0;
+        flex-direction: column;
+    }
+
+    article section#about-section .body .top .sec-2 {
+        flex-direction: column-reverse;
+    }
+
+    article section#about-section .body .top #image {
+        width: 100%;
+        height: 250px;
+    }
+
+    article section#about-section .body .top .text,
+    article section#about-section .body .top .sec-2 .text {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    article section#about-section .body .bottom {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    article section#about-section .body .bottom div.block {
+        padding: 0px;
+    }
+
+    article section#about-section .body .top .text span,
+    article section#about-section .body .bottom div.block p {
+        font-size: 12pt;
+    }
+
+    article section#service-section .card .icon {
+        height: 90px;
+        width: 90px;
+        margin: 0px 0;
+    }
+
+    article section#service-section .card .title-6 {
+        font-size: 18pt;
+    }
+
+    article section#service-section .card span {
+        font-size: 9pt;
+    }
+
+    article section#image-section .body {
+        height: calc((var(--width)/2) + 50px);
+    }
+    
+    article section#image-section .body .carousel-container {
+        height: calc(var(--width)/2) !important;
+    }
+
+    article section#image-section .body .carousel-container .item {
+        width: calc(var(--width)/2);
+        height: calc(var(--width)/2);
+    }
+
+    article section#image-section .body .carousel-container .item img{
+        width: calc(var(--width)/2);
+        height: calc(var(--width)/2);
+    }
+}

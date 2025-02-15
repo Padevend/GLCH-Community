@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 40%;
+    width: var(--width);
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header section */
+header section {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-default);
+    display: flex;
+    position: relative;
+}
+
+header section .left-box {
+    font-family: 'arial';
+    color: var(--color-const-white);
+    width: 100%;
+    font-size: 30pt;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+/* style de l'article : section "about-section" */
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+}
+
+article section .head {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article section .head h1 {
+    font-weight: 500;
+    font-size: 25pt;
+    letter-spacing: 1.5px;
+    color: var(--color-default);
+}
+
+article section .head span {
+    text-align: center;
+    width: 30%;
+    padding: 10px 0;
+    color: var(--color-transparent-3);
+    font-size: 9pt;
+}
+
+article section#galerie-section .body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    gap: 15px;
+    padding: 10px 2%;
+    place-content: center;
+}
+
+article section#galerie-section .body div{
+    width: 100%;
+    height: 300px;
+    background: var(--color-gray2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+article section#galerie-section .body div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 860px) {
+    
+}

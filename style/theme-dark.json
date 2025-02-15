@@ -1,0 +1,35 @@
+{
+    "color": {
+        "white": "#000716",
+        "default": "#4d0a83",
+        "gray": "#eeeded54",
+        "gray2": "#ffffff10",
+        "default2": "#087051",
+        "footer-bg": "#080f1d",
+        "bg": {
+            "gray": "#ffffff08",
+            "white": "#ffffff10"
+        },
+        "transparent": {
+            "1": "#00000025",
+            "2": "#00000070",
+            "3": "#ffffff50",
+            "4": "#fffff",
+            "5": "#ffffff10"
+        },
+        "text": {
+            "white": "#000",
+            "black": "#fff",
+            "gray": "#aeaeae",
+            "default": "#4d0a83",
+            "default2": "#087051"
+        },
+        "const": {
+            "white": "#fff",
+            "black": "#000",
+            "transparent": {
+                "1": "#ffffff75"
+            }
+        }
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GLCH Community</title>
+        <!-- Map.js ui style -->
+        <link rel="stylesheet" href="http://js.api.here.com/v3/3.1/mapsjs-ui.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"> -->
+
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../../style/contact.css">
+    </head>
+
+    <body mode="light">
+        <!-- progressive-bar -->
+        <div class="loader">
+            <div class="progressive-bar"></div>
+        </div>
+
+        <header>
+            <nav>
+                <div class="logo-brand">
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li class="item home">
+                            <a href="../../#home-section">Home</a>
+                        </li>
+                        <li class="item about">
+                            <a href="../../#about-section">About</a>
+                        </li>
+                        <li class="item service">
+                            <a href="../../#service-section">Services</a>
+                        </li>
+                        <li class="item galerie">
+                            <a href="./galerie.html">Galerie</a>
+                        </li>
+                        <li class="item contact active">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+                    <button>
+                        <ion-icon name="sunny-outline"></ion-icon>
+                    </button>
+                    <a class="btn-register">Log in</a>
+                    <a class="btn-login a-02">Register</a>
+                </div>
+                <!-- boutton d'ouverture de la barre de nvigation laterale -->
+                <div class="burger-btn">
+                    <button class="open">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="side-bar">
+                    <!-- Pour les appariels mobiles -->
+                    <div class="header">
+                        <div class="brand">
+                            <img src="../img/logo.png" alt="" height="50">
+                        </div>
+                        <div class="return">
+                            <button class="mode">
+                                <ion-icon name="sunny-outline"></ion-icon>
+                            </button>
+                            <button class="close">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <ul>
+                            <li class="item home">
+                                <a href="../../#home-section">Home</a>
+                            </li>
+                            <li class="item about">
+                                <a href="../../#about-section">About</a>
+                            </li>
+                            <li class="item service">
+                                <a href="../../#service-section">Services</a>
+                            </li>
+                            <li class="item galerie">
+                                <a href="./galerie.html">Galerie</a>
+                            </li>
+                            <li class="item contact active">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section id="home-section">
+                <div class="background">
+                    <div class="circle-01"></div>
+                    <div class="circle-02"></div>
+                    <div class="circle-03"></div>
+                    <div class="circle-04"></div>
+                </div>
+                <div class="left-box">
+                    <span>Contact Us</span>
+                </div>
+            </section>
+        </header>
+
+        <section id="contact-section">
+            <div class="doc">
+                <div class="map" id="map"></div>
+                <div class="about">
+                    <span class="title">Get in Touch</span>
+                    <span class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quod repudiandae, natus laborum iure numquam cumque.
+                    </span>
+                    <div class="address">Mbouda, Bametap, Douala, B.P. 13208 yaoundé, cameroun</div>
+                    <div class="profile">
+                        <div class="img">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="phone">( +237 ) 659 375 114</div>
+                            <div class="mail">grandluccommunityhealth@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form method="post" class="contact">
+                <fieldset>
+                    <legend>CONTACT WITH US</legend>
+                    <span class="title">Write a message</span>
+                    <div class="table">
+                        <div class="box">
+                            <input type="text" placeholder="Full name" required name="name">
+                            <input type="email" placeholder="Email address" required name="email">
+                            <input type="tel" placeholder="Phone" required name="phone">
+                            <input type="text" placeholder="Subject" required name="subject">
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="Write a message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">SEND A MESSAGE</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <div class="block b-01">
+                <div class="brand">GLCH</div>
+                <div class="links">
+                    <ul>
+                        <li><a href="../../#about-section">About</a></li>
+                        <li><a href="../../#service-section">services</a></li>
+                        <li><a href="../../#image-section">galerie</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="./galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="block b-02">
+                <div>copyright &COPY; 2025 GLCH community All right reserved</div>
+                <div>
+                    <a href="./terms.html" target="_blank">Terms Of Service</a>
+                    <a href="https://www.freeprivacypolicy.com/live/5ddd7858-ebd6-46a4-b954-954141ad60dc" target="_blank">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- maps.js package  -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+
+    <!-- Leaflrt.js package for made map 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
+
+    <!-- email.js package  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "wGrUG5AwX4Y1ujRoA",
+            });
+        })();
+    </script>
+
+    <!-- icon icon  package-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- gestion du style -->
+    <script src="../../style/style.js"></script>
+    <script src="../../style/response/responsive.js"></script>
+
+    <!-- script principal -->
+    <script src="../../script/event.js"></script>
+    <script src="../../script/contact.js"></script>
+
+</html>
