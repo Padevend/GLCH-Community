@@ -1,0 +1,4 @@
+User-agent *
+Disallow:
+
+Sitemap: https//glchcommunity.onrender.com/sitemap.xml
