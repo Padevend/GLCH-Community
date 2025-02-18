@@ -13,18 +13,11 @@
     ],
     "events":[
         {
-            "name": "Gala",
-            "date": "25/04/2025",
+            "name": "Ouverture centre communautaire a galim: Clinique Mandela",
+            "date": "21/02/2025",
             "cover": "./assets/galerie/glch3.jpg",
-            "place": "Douala, Cameroun",
-            "about": "Soir"
-        },
-        {
-            "name": "Gala22",
-            "date": "25/04/2025",
-            "cover": "./assets/galerie/glch3.jpg",
-            "place": "Douala, Cameroun",
-            "about": "Soir"
+            "place": "Galim, Mbouda",
+            "about": "Toute personne vivant a Galim, Bagam, bati, bamenyam et ses environs <br><br> GLCH vous accueil dans la clinique mandela."
         }
     ]
 }
