@@ -489,4 +489,24 @@ article section#events-section .body .btn.right{
         height: 50%;
         width: 100%;
     }
+
+    article section#events-section .body .carousel-content .slide .b02 .title{
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    article section#events-section .body .carousel-content .slide .b02 .place{
+        font-size: 11pt;
+    }
+    article section#events-section .body .carousel-content .slide .b02 .date{
+        font-size: 10pt;
+    }
+    article section#events-section .body .carousel-content .slide .b02 p{
+        color: var(--color-transparent-3);
+        font-size: 9pt;
+    }
+    article section#events-section .body .btn{
+        height: 40pt;
+        width: 40pt;
+        font-size: 15pt;
+    }
 }
