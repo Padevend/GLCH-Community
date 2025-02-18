@@ -5,10 +5,26 @@
             "value": 0
         }
     },
-    "faqs": {
-        "1": {
+    "faqs": [
+        {
             "tags": "",
             "response": ""
         }
-    }
+    ],
+    "events":[
+        {
+            "name": "Gala",
+            "date": "25/04/2025",
+            "cover": "./assets/galerie/glch3.jpg",
+            "place": "Douala, Cameroun",
+            "about": "Soir"
+        },
+        {
+            "name": "Gala22",
+            "date": "25/04/2025",
+            "cover": "./assets/galerie/glch3.jpg",
+            "place": "Douala, Cameroun",
+            "about": "Soir"
+        }
+    ]
 }
