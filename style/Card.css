@@ -1,0 +1,113 @@
+article section#card-section .body{
+    position: relative;
+    width: var(--width) !important;
+    overflow: hidden;
+}
+
+article section#card-section form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+article section#card-section form div.input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0;
+}
+
+article section#card-section form div.input input,
+article section#card-section form div.input select{
+    outline: none;
+    background: var(--color-white);
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 3px 0px var(--color-transparent-3);
+    border-radius: 8px;
+    color: var(--color-transparent-3);
+    font-size: 11pt;
+    letter-spacing: .5px;
+    width: 100%;
+}
+
+article section#card-section form div.type{
+    display: flex;
+    color: var(--color-text-black);
+    align-items: center;
+}
+article section#card-section form div.type span{
+    width: 100%;
+    padding: 0 20px;
+    font-size: 15pt;
+}
+article section#card-section form div.input span.price{
+    padding: 0 5px;
+    outline: none;
+    color: var(--color-transparent-3);
+}
+article section#card-section form div.input label{
+    color: var(--color-default);
+    font-size: 10pt;
+}
+
+article section#card-section form div.info{
+    width: 50%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: green;
+    background-color: #00800050;
+    border: 1px solid green;
+    border-radius: 10px
+}
+article section#card-section form div.info.error{
+    color: red;
+    background-color: #ff000050;
+    border: 1px solid red;
+}
+
+article section#card-section .body .previews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--color-gray2);
+}
+
+article section#card-section .body .previews canvas{
+    border-radius: 10px !important;
+    overflow: hidden;
+    margin: 0 20px;
+    background: var(--color-white);
+}
+
+a#card-downloader,
+article section#card-section form button[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--color-default);
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--color-const-white);
+    border: none;
+}
+
+@media screen and (max-width: 860px) {
+    article section#card-section .body .previews{
+        flex-direction: column;
+    }
+    article section#card-section .body .previews canvas{
+        margin: 15px 10px;
+    }
+
+    article section#card-section form div.input{
+        width: 90%;
+    }
+
+    article section#card-section form div.type span{
+        font-size: 10pt;
+    }
+}

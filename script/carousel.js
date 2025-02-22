@@ -41,5 +41,66 @@ window.addEventListener("scroll", (e) => {
     }
 })
 
+var carousel_content = document.querySelector("article section#events-section .body .carousel-content")
+fetch(`${window.location.origin}/assets/data/data.json`)
+    .then(resp => resp.json())
+    .then(data => {
+        let Events = data.events
+        Events.forEach(event => {
+            let div = document.createElement("div")
+            div.setAttribute("class", "slide")
+            div.innerHTML = `
+            <img src="${event.cover}" alt="">
+            <div>                                
+            </div>
+            <div class="b02">
+                <span class="title">${event.name}</span>
+                <span class="place">${event.place}</span>
+                <span class="date">${event.date}</span>
+                <p>
+                    ${event.about}
+                </p>
+            </div>
+            `
+            carousel_content.appendChild(div)
+        })
+        document.body.style.setProperty("--events-len", Events.length)
+        start()
+    })
 
-    
+
+function start(){
+    var index = 0;
+    const totalSlides = document.querySelectorAll("article section#events-section .body .carousel-content .slide").length;
+    const carousel = document.querySelector("article section#events-section .body .carousel-content");
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(${-index * document.documentElement.clientWidth}px)`;
+    }
+
+    function nextSlide() {
+        if (index < totalSlides - 1) {
+            index++;
+        } else {
+            index = 0; // Retour au début si on atteint la fin
+        }
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        console.log(totalSlides, "x")
+        if (index > 0) {
+            index--;
+        } else {
+            index = totalSlides - 1; // Retour à la fin si on est au début
+        }
+        updateCarousel();
+    }
+
+    document.querySelector("article section#events-section .body .btn.left").onclick = ()=>{
+        prevSlide()
+    }
+    document.querySelector("article section#events-section .body .btn.right").onclick = ()=>{
+        nextSlide()
+    }
+}

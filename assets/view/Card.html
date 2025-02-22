@@ -16,6 +16,7 @@
         <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="../../style/galerie.css">
+        <link rel="stylesheet" href="../../style/Card.css">
     </head>
 
     <body mode="light">
@@ -40,8 +41,8 @@
                         <li class="item service">
                             <a href="../../#service-section">Services</a>
                         </li>
-                        <li class="item galerie active">
-                            <a href="#">Galerie</a>
+                        <li class="item galerie">
+                            <a href="./galerie.html">Galerie</a>
                         </li>
                         <li class="item contact">
                             <a href="./contact.html">Contact</a>
@@ -107,17 +108,79 @@
                     <div class="circle-04"></div>
                 </div>
                 <div class="left-box">
-                    <span>Galerie</span>
+                    <span>card Menbers</span>
                 </div>
             </section>
         </header>
 
         <article>
-            <section id="galerie-section">
-                <div class="head">
-                    <h1>Images</h1>
-                </div>
-                <div class="body">
+            <section id="card-section">
+                <form method="post" action="" name="register-form">
+
+                    <div class="input">
+                        <label for="name">Name :</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="surname">Surname :</label>
+                        <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="input">
+                        <label for="age">Age :</label>
+                        <input type="number" name="age" id="age" placeholder="Enter your old year" required>
+                    </div>
+                    <div class="input">
+                        <label for="occupation">Occupation :</label>
+                        <input type="text" name="occupation" id="occupation" placeholder="occupation" required>
+                    </div>
+                    <div class="input">
+                        <label for="type">Type d'adhesion :</label>
+                        <div class="type">
+                            <select name="type" id="type">
+                                <option value="actif">Active</option>
+                                <option value="honneur">Honnor</option>
+                                <option value="donateur">Donor</option>
+                            </select>
+                            <span>Price:<span class="price" inputmode="numeric">10000</span>FCFA</span>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone :</label>
+                        <input type="tel" name="phone" id="phone" placeholder="XXX-XXX-XXX" required>
+                    </div>
+                    <div class="input">
+                        <label for="city">Home (city/neighborhood) :</label>
+                        <input type="text" name="city" id="city" placeholder="City" required>
+                    </div>
+                    <div class="input">
+                        <label for="departement">Department :</label>
+                        <input type="text" name="departement" id="departement" placeholder="Department" required>
+                    </div>
+                    <div class="input">
+                        <label for="arrondissement">Borough :</label>
+                        <input type="text" name="arrondissement" id="arrondissement" placeholder="Borough" required>
+                    </div>
+                    <div class="input">
+                        
+                        <label for="cni">CNI :</label>
+                        <input type="text" name="cni" id="cni" placeholder="carte national d'identité" required>
+                    </div>
+
+                    <div class="info" hidden>
+                        <span>Verified information</span>
+                    </div>
+
+                    <button type="submit">Validate</button>
+                </form>
+                <div class="body" hidden>
+                    <div class="previews">
+                        <canvas id="card-Canvas-front"></canvas>
+                        <canvas id="card-Canvas-back"></canvas>
+                    </div>
+                    <div class="head">
+                        <a href="#" id="card-downloader">Pay Card by Mobile Money</a>
+                    </div>
                 </div>
             </section>
         </article>
@@ -156,6 +219,8 @@
             </div>
         </footer>
     </body>
+    <!-- cinetpay API -->
+    <script src="https://cdn.cinetpay.com/seamless/main.js" type="text/javascript"></script>
 
     <!-- icon icon  package-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -167,6 +232,5 @@
 
     <!-- script principal -->
     <script src="../../script/event.js"></script>
-    <script src="../../script/galerie.js"></script>
-
+    <script src="../../script/Card.js"></script>
 </html>
