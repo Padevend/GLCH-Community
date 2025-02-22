@@ -135,7 +135,7 @@ form.addEventListener('submit', function (event) {
             //effectue le payement
             CinetPay.getCheckout({
                 transaction_id: Math.floor(Math.random() * 100000000).toString(),
-                amount: 100,
+                amount: momtant,
                 currency: 'XAF',
                 channels: 'MOBILE_MONEY',
                 description: 'Payement souscription a la carte de membres GLCH',
