@@ -1,0 +1,8 @@
+{
+    "name": "GLCH Web",
+    "icons": [
+        {
+            "src": "./assets/"
+        }
+    ]
+}

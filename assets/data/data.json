@@ -13,11 +13,18 @@
     ],
     "events":[
         {
-            "name": "Ouverture centre communautaire a galim: Clinique Mandela",
+            "name": "Opening community center in Galim: Mandela Clinic",
             "date": "21/02/2025",
-            "cover": "./assets/galerie/glch3.jpg",
+            "cover": "./assets/img/flyer01.jpg",
             "place": "Galim, Mbouda",
-            "about": "Toute personne vivant a Galim, Bagam, bati, bamenyam et ses environs <br><br> GLCH vous accueil dans la clinique mandela."
+            "about": "Anyone living in Galim, Bagam, bati, bamenyam and its surroundings. GLCH welcomes you to the Mandela clinic."
+        },
+        {
+            "name": "First GLCH Gala: Health is priceless but illness is",
+            "date": "25 Avril 2025",
+            "cover": "./assets/galerie/glch3.jpg",
+            "place": "Douala, Cameroon",
+            "about": "Why wait until you are sick to go to the hospital, with GLCH We help prevent your illness before it appears"
         }
     ]
 }

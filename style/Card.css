@@ -1,0 +1,237 @@
+article section#card-section .body{
+    position: relative;
+    width: var(--width) !important;
+    overflow: hidden;
+}
+
+article section#card-section .required{
+    width: 50%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #b8b800;
+    background-color: #ffffe154;
+    border: 1px solid #b8b800;
+    border-radius: 10px
+}
+
+article section#card-section form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+article section#card-section form div.input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0;
+}
+
+article section#card-section form div.input input,
+article section#card-section form div.input select{
+    outline: none;
+    background: var(--color-white);
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 3px 0px var(--color-transparent-3);
+    border-radius: 8px;
+    color: var(--color-transparent-3);
+    font-size: 11pt;
+    letter-spacing: .5px;
+    width: 100%;
+}
+
+
+article section#card-section form div.type{
+    display: flex;
+    color: var(--color-text-black);
+    align-items: center;
+}
+article section#card-section form div.type span{
+    width: 100%;
+    padding: 0 20px;
+    font-size: 15pt;
+}
+article section#card-section form div.input span.price{
+    padding: 0 5px;
+    outline: none;
+    color: var(--color-transparent-3);
+}
+article section#card-section form div.input label{
+    color: var(--color-default);
+    font-size: 10pt;
+}
+
+article section#card-section form div.info{
+    width: 50%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: green;
+    background-color: #00800050;
+    border: 1px solid green;
+    border-radius: 10px
+}
+article section#card-section form div.info.error{
+    color: red;
+    background-color: #ff000050;
+    border: 1px solid red;
+}
+
+article section#card-section .body .previews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--color-gray2);
+}
+
+article section#card-section .body .previews canvas{
+    border-radius: 10px !important;
+    overflow: hidden;
+    margin: 0 20px;
+    background: var(--color-white);
+}
+
+a#card-downloader,
+article section#card-section form button[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--color-default);
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--color-const-white);
+    border: none;
+}
+
+/* is success registration */
+article section#success-section{
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article section#success-section .box{
+    height: 75%;
+    background-color: var(--color-white);
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+article section#success-section .box span.msg{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: green;
+}
+
+article section#success-section .box span.subtitle{
+    font-size: .6em;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    text-transform: lowercase;
+}
+
+article section#success-section .box span.subtitle span{
+    color: green;
+    text-transform: capitalize;
+}
+article section#success-section .box img{
+    height: 150px;
+}
+
+
+/* is success registration */
+article section#success-section,
+article section#error-section{
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article section#success-section .box,
+article section#error-section .box{
+    height: 75%;
+    background-color: var(--color-white);
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+article section#success-section .box span.msg,
+article section#error-section .box span.msg{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: green;
+}
+
+article section#success-section .box span.subtitle,
+article section#error-section .box span.subtitle{
+    font-size: .6em;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    text-transform: lowercase;
+}
+
+article section#success-section .box span.subtitle span,
+article section#error-section .box span.subtitle span{
+    color: green;
+    text-transform: capitalize;
+}
+article section#success-section .box img,
+article section#error-section .box img{
+    height: 150px;
+}
+
+/* is error for registration */
+article section#error-section .box{
+    border: 2px solid red;
+}
+
+article section#error-section .box span.msg{
+    color: red;
+}
+
+article section#error-section .box span.subtitle span{
+    color: red;
+}
+
+
+@media screen and (max-width: 860px) {
+    article section#card-section .body .previews{
+        flex-direction: column;
+    }
+    article section#card-section .body .previews canvas{
+        margin: 15px 10px;
+    }
+
+    article section#card-section form div.input{
+        width: 90%;
+    }
+
+    article section#card-section form div.type span{
+        font-size: 10pt;
+    }
+}
