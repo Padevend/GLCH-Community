@@ -4,6 +4,7 @@ article section#card-section .body{
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 article section#card-section .required{
     width: 50%;
     padding: 10px 20px;
@@ -14,6 +15,8 @@ article section#card-section .required{
     border-radius: 10px
 }
 
+=======
+>>>>>>> 3cebd38f0a49b6d2f17e5d2ec9bd693498a097d4
 article section#card-section form{
     width: 100%;
     display: flex;
@@ -44,7 +47,10 @@ article section#card-section form div.input select{
     width: 100%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3cebd38f0a49b6d2f17e5d2ec9bd693498a097d4
 article section#card-section form div.type{
     display: flex;
     color: var(--color-text-black);
@@ -106,6 +112,7 @@ article section#card-section form button[type="submit"]{
     border: none;
 }
 
+<<<<<<< HEAD
 /* is success registration */
 article section#success-section{
     padding: 20px;
@@ -219,6 +226,8 @@ article section#error-section .box span.subtitle span{
 }
 
 
+=======
+>>>>>>> 3cebd38f0a49b6d2f17e5d2ec9bd693498a097d4
 @media screen and (max-width: 860px) {
     article section#card-section .body .previews{
         flex-direction: column;
