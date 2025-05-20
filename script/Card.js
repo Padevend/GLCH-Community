@@ -9,5 +9,3 @@ all_fac.forEach(item=>{
         item.classList.add("active")
     })
 })
-
-console.log(all_fac)
