@@ -48,7 +48,7 @@ Sidelinks.forEach(element => { //mobile view
 
 
 //gestoin du theme
-var themeBtn = document.querySelector("header nav .nav-buttons button")
+var themeBtn = document.querySelector("header nav .nav-buttons button.mode")
 themeBtn.addEventListener("click", () => {
     var mode = document.body.getAttribute("mode")
     var theme;

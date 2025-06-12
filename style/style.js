@@ -30,15 +30,15 @@
  * 
  * @param {Object} data 
  */
-function SetCSSVariabes(data, prefix = ''){
+function SetCSSVariabes(data, prefix = '') {
     let CSSString = ""
-    for(const key in data){
-        if(data.hasOwnProperty(key)){
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
             const newKey = `${prefix}${key}`.replace(/\s+/g, '-'); //remplacements des espaces dun nom de la variable par des tiret
 
-            if(typeof(data[key])==='object' && data[key] !== null){
+            if (typeof (data[key]) === 'object' && data[key] !== null) {
                 CSSString += SetCSSVariabes(data[key], `${newKey}-`);
-            }else{
+            } else {
                 CSSString += `--${newKey}: ${data[key]}; \n`;
             }
         }
@@ -51,7 +51,7 @@ function SetCSSVariabes(data, prefix = ''){
  * 
  * @param {String} path - path of json file
  */
-function defineVariable(path){
+function defineVariable(path) {
     fetch(path)
         .then(response => response.json())
         .then(data => {
@@ -80,25 +80,25 @@ class ThemeCLI {
         this.themes = Themes
     }
 
-    async #loadFile(){
+    async #loadFile() {
         this.Modes = {}
-        for(const theme in Themes){
+        for (const theme in Themes) {
             await fetch(Themes[theme])
-            .then(async response => await response.json())
-            .then(async data =>{
-                this.Modes[theme] = await SetCSSVariabes(data)
-            })
+                .then(async response => await response.json())
+                .then(async data => {
+                    this.Modes[theme] = await SetCSSVariabes(data)
+                })
         }
     }
-    async updateTheme(){
+    async updateTheme() {
         await this.#loadFile()
         this.mode = document.body.getAttribute("mode")
-        if(this.mode in this.Modes){
-            
-            if(document.querySelector("style.st-sh19735003") != null){
+        if (this.mode in this.Modes) {
+
+            if (document.querySelector("style.st-sh19735003") != null) {
                 var styleTag = document.querySelector("style.st-sh19735003")
                 styleTag.innerHTML = ""
-            }else{
+            } else {
                 var styleTag = document.createElement("style")
                 styleTag.classList.add("st-sh19735003")
                 document.documentElement.prepend(styleTag)
@@ -109,7 +109,7 @@ class ThemeCLI {
                 ${this.Modes[this.mode]}
             }
             `
-        }else{
+        } else {
             console.error(`"${this.mode}" is not defined: use setTheme()`)
         }
     }
@@ -122,3 +122,28 @@ var Themes = {
 }
 var ThemeManager = new ThemeCLI(Themes)
 ThemeManager.updateTheme()
+
+// gestion de la langue
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,fr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element')
+}
+googleTranslateElementInit()
+
+function setLanguage(lang) {
+    const currentLang = getCookie('googtrans');
+    const target = `/fr/${lang}`;
+    if (currentLang !== target) {
+        document.cookie = `googtrans=${target}; path=/`;
+        location.reload(); // recharge la page avec la nouvelle langue
+    }
+}
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    return parts.length === 2 ? parts.pop().split(';').shift() : '';
+}
